@@ -19,3 +19,4 @@ download_scores() {
 }
 
 download_scores "missa-i" 1143 2980 300 2977
+download_scores "missa-viii" 1184 961 1384 2760
