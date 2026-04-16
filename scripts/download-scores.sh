@@ -18,5 +18,6 @@ download_scores() {
     popd
 }
 
+download_scores "credo" 344 2983 749 678 955 2934
 download_scores "missa-i" 1143 2980 300 2977
 download_scores "missa-viii" 1184 961 1384 2760
