@@ -1,0 +1,17 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v6
+      - name: Compile LaTeX documents
+        uses: xu-cheng/texlive-action@v3
+        with:
+          run: latexmk
+      - name: Upload PDF files
+        uses: actions/upload-artifact@v6
+        with:
+          name: ordinarium-missae
+          path: build/*.pdf
